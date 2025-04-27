@@ -2,11 +2,11 @@
   "domain": "pushover",
   "name": "Pushover",
   "version": "1.0.0",
-  "issue_tracker": "https://github.com/TheMegamind/core/issues"
-  "codeowners": ["@TheMegamind"],
+  "issue_tracker": "https://github.com/TheMegamind/core/issues",
+  "codeowners": ["@engrbm87"],
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/pushover",
   "iot_class": "cloud_push",
   "loggers": ["pushover_complete"],
-  "requirements": ["pushover_complete==1.2.0"]
+  "requirements": ["pushover_complete==1.1.1"]
 }
