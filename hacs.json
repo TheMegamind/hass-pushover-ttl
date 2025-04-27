@@ -1,6 +1,6 @@
 {
   "name": "Pushover (with TTL)",
-  "content": "integration",
-  "domain": "pushover",
-  "homeassistant": "2025.5.0"
+  "content_in_root": false,
+  "zip_release": false
 }
+
