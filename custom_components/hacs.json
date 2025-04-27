@@ -1,0 +1,6 @@
+{
+  "name": "Pushover (with TTL)",
+  "content": "integration",
+  "domain": "pushover",
+  "homeassistant": "2025.5.0"
+}
