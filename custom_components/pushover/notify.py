@@ -100,22 +100,21 @@ class PushoverNotificationService(BaseNotificationService):
 
         try:
             self.pushover.send_message(
-                self._user_key,
-                message,
-                ",".join(kwargs.get(ATTR_TARGET, [])),
-                title,
-                url,
-                url_title,
-                image,
-                priority,
-                retry,
-                expire,
-                callback_url,
-                timestamp,
-                sound,
-                html,
-                ttl,
+                user=self._user_key,
+                message=message,
+                target=",".join(kwargs.get(ATTR_TARGET, [])),
+                title=title,
+                url=url,
+                url_title=url_title,
+                image=image,
+                priority=priority,
+                retry=retry,
+                expire=expire,
+                callback_url=callback_url,
+                timestamp=timestamp,
+                sound=sound,
+                html=html,
+                ttl=ttl,
             )
-
         except BadAPIRequestError as err:
             raise HomeAssistantError(str(err)) from err
