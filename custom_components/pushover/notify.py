@@ -102,7 +102,7 @@ class PushoverNotificationService(BaseNotificationService):
             self.pushover.send_message(
                 user=self._user_key,
                 message=message,
-                target=",".join(kwargs.get(ATTR_TARGET, [])),
+                device=",".join(kwargs.get(ATTR_TARGET, [])),
                 title=title,
                 url=url,
                 url_title=url_title,
